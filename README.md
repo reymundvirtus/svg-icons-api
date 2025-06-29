@@ -56,6 +56,8 @@ By contributing, you agree that the icons you submit are either:
 - Licensed under an open source/public domain license (e.g. MIT, CC0)
 - Not restricted by copyright or trademark laws
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
+
 > [!IMPORTANT]
 > Before submitting an SVG icon, please ensure you have the legal right to do so.
 >
