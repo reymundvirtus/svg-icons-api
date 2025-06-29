@@ -23,7 +23,7 @@ def get_neutral_icon(icon_name: str):
 
     raise HTTPException(status_code=404, detail="Icon not found")
 
-@app.get("/icons/light/{icon_name}")
+@app.get("/icons/light-variant/{icon_name}")
 def get_light_icon(icon_name: str):
     icon_path = os.path.join(LIGHT_ICON_FOLDER, f"{icon_name}.svg")
 
@@ -32,7 +32,7 @@ def get_light_icon(icon_name: str):
 
     raise HTTPException(status_code=404, detail="Icon not found")
 
-@app.get("/icons/dark/{icon_name}")
+@app.get("/icons/dark-variant/{icon_name}")
 def get_dark_icon(icon_name: str):
     icon_path = os.path.join(DARK_ICON_FOLDER, f"{icon_name}.svg")
 
