@@ -5,9 +5,9 @@ on:
     paths:
       - 'main.py'
       - 'response.py'
-      - 'index.html'
+      - 'view/**'
       - 'app/**'
-      - 'assets/icons/**'
+      - 'assets/**'
       - '.github/workflows/main.yml'
 
 jobs:
