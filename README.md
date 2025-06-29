@@ -37,7 +37,7 @@ You can embed directly in HTML or Markdown:
 
 <span>
 <img src="https://svg-icons-api-production.up.railway.app/icons/neutral/spotify" width="32" />
-<img src="https://svg-icons-api-production.up.railway.app/icons/light/astro" width="32" />
+<img src="https://svg-icons-api-production.up.railway.app/icons/light/bash" width="32" />
 <img src="https://svg-icons-api-production.up.railway.app/icons/dark/github" width="32" />
 </span>
 
