@@ -1,8 +1,10 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
+from response import Response
 import os
 
 app = FastAPI()
+res = Response()
 
 NEUTRAL_ICON_FOLDER = "assets/icons/neutral"
 LIGHT_ICON_FOLDER = "assets/icons/light"
@@ -21,7 +23,7 @@ def get_neutral_icon(icon_name: str):
     if os.path.isfile(icon_path):
         return FileResponse(icon_path, media_type="image/svg+xml")
 
-    raise HTTPException(status_code=404, detail="Icon not found")
+    raise res.return_not_found()
 
 @app.get("/icons/light-variant/{icon_name}")
 def get_light_icon(icon_name: str):
@@ -30,7 +32,7 @@ def get_light_icon(icon_name: str):
     if os.path.isfile(icon_path):
         return FileResponse(icon_path, media_type="image/svg+xml")
 
-    raise HTTPException(status_code=404, detail="Icon not found")
+    raise res.return_not_found()
 
 @app.get("/icons/dark-variant/{icon_name}")
 def get_dark_icon(icon_name: str):
@@ -39,4 +41,4 @@ def get_dark_icon(icon_name: str):
     if os.path.isfile(icon_path):
         return FileResponse(icon_path, media_type="image/svg+xml")
 
-    raise HTTPException(status_code=404, detail="Icon not found")
+    raise res.return_not_found()
