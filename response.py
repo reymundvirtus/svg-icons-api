@@ -10,7 +10,7 @@ class Response:
         self.WORDMARK_ICON_FOLDER = "assets/wordmark"
 
     def return_index_html(self):
-        return FileResponse("index.html", media_type="text/html")
+        return FileResponse("view/index.html", media_type="text/html")
 
     def return_icon(self, icon_type, icon_name):
         if icon_type == "neutral":
