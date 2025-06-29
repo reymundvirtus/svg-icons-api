@@ -4,9 +4,11 @@ on:
   push:
     paths:
       - 'main.py'
+      - 'response.py'
+      - 'index.html'
       - 'app/**'
       - 'assets/icons/**'
-      - '.github/workflows/deploy.yml'
+      - '.github/workflows/main.yml'
 
 jobs:
   deploy:
