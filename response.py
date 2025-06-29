@@ -32,4 +32,4 @@ class Response:
         raise self.return_not_found()
 
     def return_not_found(self):
-        return HTTPException(status_code=404, detail="Icon not found")
+        return HTTPException(status_code=404, detail="Icon not found. Want to add it? Check https://github.com/reymundvirtus/svg-icons-api")
