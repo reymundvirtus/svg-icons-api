@@ -1,0 +1,21 @@
+name: Deploy to Railway
+
+on:
+  push:
+    paths:
+      - 'main.py'
+      - 'app/**'
+      - 'assets/icons/**'
+      - '.github/workflows/deploy.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Trigger Railway deployment
+        uses: railwayapp/cli-action@v1
+        with:
+          railwayToken: ${{ secrets.RAILWAY_TOKEN }}
