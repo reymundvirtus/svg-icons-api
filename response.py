@@ -24,7 +24,7 @@ class Response:
             return self.check_if_isfile(icon_path)
 
         raise self.return_not_found()
-    
+
     def check_if_isfile(self, icon_path):
         if os.path.isfile(icon_path):
             return FileResponse(icon_path, media_type="image/svg+xml")
