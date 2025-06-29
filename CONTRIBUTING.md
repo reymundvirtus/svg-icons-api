@@ -1,0 +1,1 @@
+⚠️ By submitting icons to this repository, you confirm you own the rights to distribute them under an open license (e.g. MIT, CC0). Do not submit copyrighted brand logos without permission.
