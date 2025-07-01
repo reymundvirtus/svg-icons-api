@@ -72,4 +72,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 ---
 
 ### License
-This library is MIT licensed.
+This API Library is MIT licensed.
