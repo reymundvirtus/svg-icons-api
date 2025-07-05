@@ -26,9 +26,9 @@ A simple and fast API for serving SVG icons tailored for light, dark, and neutra
 #### ✅ Examples
 
 ```http
-GET /icons/dark/github
+GET /icons/dark/spotify
 GET /icons/light/astro
-GET /icons/neutral/google
+GET /icons/neutral/github
 ```
 
 Returns: image/svg+xml
@@ -37,7 +37,7 @@ You can embed directly in HTML or Markdown:
 
 <span>
 <img src="https://svg-icons-api-production.up.railway.app/icons/neutral/spotify" width="32" />
-<img src="https://svg-icons-api-production.up.railway.app/icons/light/bash" width="32" />
+<img src="https://svg-icons-api-production.up.railway.app/icons/light/astro" width="32" />
 <img src="https://svg-icons-api-production.up.railway.app/icons/dark/github" width="32" />
 </span>
 
